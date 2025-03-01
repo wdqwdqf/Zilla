@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Service</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/Service.css">
+    <link rel="stylesheet" href="./bootstrap/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        /* Responsive adjustments without altering your original color scheme */
+        @media (max-width: 768px) {
+
+            /* Ensure the slider area becomes horizontally scrollable on smaller screens */
+            #slide {
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+            }
+
+            #slide .item {
+                flex: 0 0 100%;
+                scroll-snap-align: center;
+                min-height: 250px;
+            }
+
+            /* Adjust text sizes in the slider content */
+            .content .name {
+                font-size: 1.5rem;
+            }
+
+            .content .des {
+                font-size: 1rem;
+            }
+
+            .content button {
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+            }
+
+            /* Add some horizontal padding to the container */
+            .container {
+                padding: 0 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            #slide .item {
+                min-height: 200px;
+            }
+
+            .content .name {
+                font-size: 1.3rem;
+            }
+
+            .content .des {
+                font-size: 0.9rem;
+            }
+
+            .content button {
+                font-size: 0.9rem;
+                padding: 0.4rem 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Fitness Zilla®</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Services.html">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Login Form.html">Login Form</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Registration Form.html">Register</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Membership
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Membership.html">Membership Plan</a></li>
+                                <li><a class="dropdown-item" href="member.html">Trainer Booking Form</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="code" role="search">
+                        <input class="text" type="search" placeholder="Search..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="slide">
+            <div class="item" style="background-image: url(./Image/1.jpg);">
+                <div class="content">
+                    <div class="name">Instructors</div>
+                    <div class="des">
+                        As fitness becomes an integral part of a healthy lifestyle, the presence of a knowledgeable and
+                        encouraging gym instructor becomes paramount in helping clients achieve their fitness goals.
+                    </div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./Image/17.webp);">
+                <div class="content">
+                    <div class="name">Instructors</div>
+                    <div class="des">
+                        A gym instructor plays a crucial role in guiding individuals on their fitness journey, providing
+                        expertise, motivation, and personalized support.
+                    </div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./Image/3.jpg);">
+                <div class="content">
+                    <div class="name">Personal Trainers</div>
+                    <div class="des">
+                        Gym instructors are well-versed in exercise physiology, nutrition and various training
+                        methodologies. They possess the knowledge to create customized workout plans tailored to
+                        individual needs.
+                    </div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./Image/4.jpg);">
+                <div class="content">
+                    <div class="name">Instructors support</div>
+                    <div class="des">
+                        The journey to achieving fitness goals can be challenging and having a supportive instructor can
+                        make a significant difference.
+                    </div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./Image/5);">4
+                <div class="content">
+                    <div class="name">Trainer</div>
+                    <div class="des">
+                        There are many Instructors and personal trainer in the Fitness Zilla, you can visit our about
+                        page and see what suites your choice.
+                    </div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./Image/6.jpg);">
+                <div class="content">
+                    <div class="name">Trainer workflow</div>
+                    <div class="des">
+                        A trainer's workflow encompasses a series of well-organized and purposeful steps designed to
+                        facilitate effective coaching and support for clients.
+                    </div>
+                    <button>See more</button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+    <script src="./Js/Service.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

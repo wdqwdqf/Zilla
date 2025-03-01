@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Zilla Memberships Plan</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/js/bootstrap.min.js">
+    <style>
+        body {
+            font-family: cursive;
+            background-image: url("./Image/13.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .navbar {
+            background-image: url("Image/10.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 15vh;
+        }
+
+        .container-fluid {
+            font-family: cursive;
+            font-weight: bolder;
+            font-size: large;
+        }
+
+        .navbar-brand {
+            color: red;
+            font-size: xx-large;
+            font-weight: bolder;
+            font-family: cursive;
+        }
+
+        .nav-item a {
+            color: whitesmoke;
+            font-family: cursive;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        .nav-item a:hover {
+            background-color: rgb(146, 98, 8);
+            border-radius: 40px;
+        }
+
+        .dropdown-menu {
+            background-color: rgba(35, 35, 108, 0.821);
+        }
+
+        .text {
+            backdrop-filter: blur(4%) saturate(180%);
+            border-radius: 40px;
+            background: transparent;
+            border-color: #45a049;
+            border-width: 3px;
+            height: 8vh;
+            color: bisque;
+        }
+
+        ::placeholder {
+            color: #a94dcb;
+            font-size: large;
+        }
+
+        .btn {
+            background-color: #0d1c2c;
+            color: bisque;
+            border-radius: 50%;
+            height: 8vh;
+        }
+
+        .btn:hover {
+            color: red;
+            background-color: black;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: teal;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: rgb(141, 16, 16);
+            font-weight: bolder;
+        }
+
+        .membership-option {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ffffff;
+            border-radius: 6px;
+        }
+
+        .membership-option h3 {
+            color: rgb(43, 43, 144);
+            font-size: large;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .membership-option p {
+            color: wheat;
+            font-weight: 300;
+        }
+
+        .join-now-button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .join-now-button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #15304b;
+            color: gold;
+            text-align: center;
+            padding: 5px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media(max-width:600px) {
+            .navbar {
+                height: auto;
+                text-align: center;
+            }
+
+            .navbar-toggler-icon {
+                background-color: rgb(43, 43, 144);
+            }
+
+            .nav-item a:hover {
+                background-color: rgb(146, 98, 8);
+                border-radius: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Fitness Zilla®</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Services.html">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Login Form.html">Login Form</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Registration Form.html">Register</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Membership
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Membership.html">Membership Plan</a></li>
+                                <li><a class="dropdown-item" href="member.html">Trainer Booking Form</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="code" role="search">
+                        <input class="text" type="search" placeholder="Search..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Explore Our Membership Options</h2>
+
+        <div class="membership-option">
+            <h3>Basic Membership</h3>
+            <p>Welcome to Fitness Zilla Gym's Basic Membership Plan! Enjoy access to our main workout area, cardio, and
+                basic strength equipment
+                during standard hours. Benefit from select fitness classes, locker room facilities, and a personalized
+                fitness assessment. Access
+                online resources, track progress, and join community events. Plus, enjoy discounts on additional
+                services. Flexible terms make it
+                easy to kickstart your fitness journey with us!</p>
+            <p>Rs 3000 per month</p>
+        </div>
+
+        <div class="membership-option">
+            <h3>Zumbastic Membership</h3>
+            <p>Experience fitness with flair through Fitness Zilla Gym's Zumbastic Membership Plan! Dive into unlimited
+                Zumba classes, exclusive events, and personalized assessments. Enjoy full gym access, extended hours,
+                and VIP locker room perks. With dedicated Zumba instructors, nutritional guidance, and merchandise
+                discounts, this membership is designed for dance fitness enthusiasts. Elevate your workout routine and
+                join the Zumbastic community today!</p>
+            <p>Basic Gym + 4 classes a week Zumba - Rs 5000 per month</p>
+        </div>
+
+        <div class="membership-option">
+            <h3>Yogastic Membership</h3>
+            <p>Introducing the Yogastic Membership Plan at Fitness Zilla Gym! Dive into a serene fitness experience with
+                exclusive access to our yoga studios and specialized classes. Members enjoy extended studio hours,
+                personalized yoga sessions, and access to experienced instructors. Take advantage of holistic wellness
+                resources, including meditation guides and nutritional tips. The Yogastic plan promotes flexibility,
+                mindfulness, and balance, creating a harmonious fitness journey tailored to your needs. Embrace
+                tranquility and enhance your overall well-being with Fitness Zilla's Yogastic Membership.</p>
+            <p>Basic Gym + 4 Classes a week Yoga - Rs 5000 per month</p>
+        </div>
+
+        <div class="membership-option">
+            <h3>Elite Membership</h3>
+            <p>Upgrade to the Fitness Zilla Gym's Elite Membership for a premium fitness experience. Elite members enjoy
+                unlimited access to all facilities, including exclusive use of advanced equipment and priority
+                scheduling for fitness classes. Extended gym hours cater to diverse schedules. Personalized fitness
+                assessments and tailored workout plans optimize your training. Elite members receive complimentary
+                access to specialized classes, nutrition counseling, and advanced tracking tools. Enjoy VIP locker room
+                amenities and exclusive discounts on merchandise. Elevate your fitness journey with the Elite Membership
+                at Fitness Zilla Gym.</p>
+            <p>Unlimited Classes, Gym, Zumba, and Yoga - Rs 8000 per month</p>
+        </div>
+
+        <div class="membership-option">
+            <h3>Sauna/Steam</h3>
+            <p>Indulge in the ultimate relaxation with Fitness Zilla Gym's Sauna/Steam Membership Plan. Elevate your gym
+                experience with exclusive access to luxurious sauna and steam room facilities. Unwind after your
+                workout, soothe muscles, and promote overall well-being. This membership also includes standard gym
+                amenities, providing a perfect blend of fitness and relaxation. Immerse yourself in the rejuvenating
+                atmosphere and take self-care to the next level with our Sauna/Steam Membership at Fitness Zilla Gym.
+            </p>
+            <p>Per use - Rs 1500</p>
+        </div>
+
+        <div class="membership-option">
+            <h3>Platinum Membership</h3>
+            <p>Elevate your fitness experience with Fitness Zilla Gym's Platinum Membership Plan. Enjoy exclusive 24/7
+                access to our premium facilities, including state-of-the-art equipment and dedicated workout spaces.
+                Platinum members receive personalized training sessions, nutritional guidance, and priority access to
+                all fitness classes. Take advantage of luxurious amenities such as spa services and priority booking for
+                personal trainers. With complimentary merchandise and unlimited access to online resources, our Platinum
+                Membership ensures a comprehensive and elite fitness journey. Join today and embrace a heightened level
+                of wellness and convenience at Fitness Zilla Gym.</p>
+            <p>Unlimited access to all facilities - Rs 12,000 per month</p>
+        </div>
+
+        <div class="membership-option">
+            <h3>Private Trainer</h3>
+            <p>Embark on a personalized fitness journey with Fitness Zilla Gym's Private Trainer Membership Plan. This
+                exclusive membership offers one-on-one sessions with a dedicated personal trainer, ensuring customized
+                workouts tailored to your goals and fitness level. Enjoy priority scheduling for training sessions,
+                flexibility in training locations within the gym, and a more intimate training environment. With the
+                Private Trainer Membership, you'll receive expert guidance, focused attention, and a comprehensive
+                fitness plan to help you achieve optimal results efficiently. Elevate your fitness experience with the
+                dedicated support of a private trainer at Fitness Zilla Gym.</p>
+            <p>Rs 10,000 per month</p>
+        </div>
+
+        <div class="join-now-button">
+            <a href="member.html">Join us Now</a>
+        </div>
+    </section>
+
+    <footer id="join-now">
+        <p>&copy;2024 Fitness Zilla</p>
+    </footer>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

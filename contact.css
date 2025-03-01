@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+display: flex;
+align-items: center;
+font-size: larger;
+justify-content: center;
+color: darkblue;
+min-height: 100vh;
+background-image:url("../lllll.jpg");
+background-size: cover;
+background-position: center;
+overflow: hidden;
+}
+.potato{
+ margin-top: 13%;
+ width: 470px;
+ height: 70vh;
+ background-image: url("../girl.jpg");
+ background-size: cover;
+ background-position: center;
+ box-shadow: rgb(141, 139, 139);
+}
+.potato p{
+    color: blue;
+    font-weight: bolder;
+}
+
+.btn{
+    width: 28%;
+    height: 6vh;
+    background-color: black;
+}
+.btn img{
+    width: 100%;
+    height: 4.5vh;
+    margin-bottom: 6vh;
+    text-align: center;
+}

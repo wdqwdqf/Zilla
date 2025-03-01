@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About</title>
+    <style>
+        body {
+            font-family: cursive;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #062939;
+        }
+
+        header {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .navbar {
+            height: 15vh;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            margin: 30px;
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(146, 98, 8);
+            border-radius: 40px;
+        }
+
+        .logo {
+            text-decoration: none;
+            color: rgb(83, 26, 124);
+            font-size: xx-large;
+            font-family: cursive;
+            font-weight: bolder;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 14px;
+            }
+
+            header {
+                padding: 5px 0;
+            }
+
+            .navbar {
+                height: auto;
+            }
+
+            nav li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            .text {
+                padding: 20px;
+            }
+
+            .text img {
+                width: 100%;
+            }
+
+            .instructor img {
+                width: 1000px;
+                height: 10vh;
+                border-radius: 30%;
+            }
+
+            footer {
+                padding: 5px 0;
+            }
+        }
+
+        .text h1 {
+            color: #743600;
+            padding: 20px;
+        }
+
+        .text {
+            padding: 40px;
+            text-align: center;
+            font-family: 'cursive';
+            font-size: medium;
+            font-weight: 300;
+            color: #007260;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        #instructors h1 {
+            margin-top: 0%;
+            font-family: 'cursive';
+            font-size: xx-large;
+            font-weight: bolder;
+            color: rgb(208, 206, 203);
+        }
+
+        #instructors h2 {
+            font-family: 'cursive';
+            font-size: x-large;
+            font-weight: bolder;
+            color: #743600;
+            padding: 20px;
+        }
+
+        .instructor {
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: "cursive";
+        }
+
+        .instructor img {
+            width: 45%;
+            border-radius: 40%;
+            height: 50vh;
+        }
+
+        .instructor p {
+            font-family: 'cursive';
+            font-size: large;
+            font-weight: 700;
+            color: #007260;
+        }
+
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Tablet Responsive Styles */
+        @media (min-width: 601px) and (max-width: 1024px) {
+
+            /* Base body adjustments */
+            body {
+                font-size: 16px;
+            }
+
+            /* Header tweaks */
+            header {
+                padding: 8px 0;
+            }
+
+            .navbar {
+                height: auto;
+                /* Allow height to adjust automatically */
+            }
+
+            /* Navigation adjustments */
+            nav li {
+                display: inline-block;
+                /* Keep items inline but with room */
+                margin: 10px;
+                font-size: 1.2em;
+            }
+
+            nav a {
+                margin: 10px;
+                font-size: large;
+            }
+
+            /* Text section tweaks */
+            .text {
+                padding: 30px;
+                text-align: center;
+            }
+
+            .text img {
+                width: 80%;
+                /* Scale image down for tablets */
+            }
+
+            /* Instructor images */
+            .instructor img {
+                width: 60%;
+                /* Reduce width for better layout */
+                height: auto;
+                /* Let height adjust automatically */
+                border-radius: 40%;
+            }
+
+            /* Footer tweaks */
+            footer {
+                padding: 8px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Fitness Zilla®</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Contact us.html">Contact</a></li>
+                <li><a href="Registration Form.html">Register</a></li>
+                <li><a href="Login Form.html">Login Form</a></li>
+    </header>
+
+    <div class="text">
+        <h1> INFORMATION </h1>
+        Welcome to Fitness Zilla's awesome website! Here, we're all about making fitness fun and accessible. Check out
+        our different Zumba and yoga classes we've got something for everyone! Wondering about prices? No worries!
+        We've got a handy section that breaks down all the classes and their monthly prices, so you know exactly what to
+        expect. Plus, you can create your own account to easily manage your membership and keep track of your fitness
+        journey. But that's not all we're all about building a fitness community. Connect with others through our
+        forums and social media integration. Let's make fitness a blast together! Join Fitness Zilla and let's get
+        moving!
+        <img src="./Image/16.jpeg" alt="About us" style="margin: 5%;">
+    </div>
+
+    <section id="instructors">
+        <h1>Instructor</h1>
+
+        <div class="instructor">
+            <h2>Sugam Singh</h2>
+            <p>
+                Sugam Singh is not just a fitness trainer; he is a beacon of inspiration and transformation in the world
+                of health and wellness.
+                With an unwavering commitment to helping others achieve their fitness goals, Sugam has established
+                himself as a true fitness guru.
+                His training approach goes beyond physical exercise, encompassing a holistic view of well-being that
+                includes mental and emotional
+                aspects. Sugam's personalized and innovative workout routines cater to individual needs, making fitness
+                enjoyable and accessible for
+                everyone. His motivational coaching style instills confidence and determination in his clients,
+                propelling them to surpass their limits.
+                Sugam is not only a master of various fitness disciplines but also a compassionate mentor who fosters a
+                sense of community among his clients. Under
+                Sugam Singh's guidance, fitness becomes a transformative journey, empowering individuals to embrace a
+                healthier, happier lifestyle.
+            </p>
+            <img src="./Image/sugam.jpg" alt="Instructor 1">
+        </div>
+
+        <div class="instructor">
+            <h2>Khagendra Oli</h2>
+            <p>Meet Khagendra Oli, our dedicated and experienced yoga instructor at Fitness Zilla.
+                With a passion for promoting holistic well-being, Khagendra brings a wealth of knowledge and a calming
+                presence to his
+                yoga classes. His classes focus on a blend of traditional yoga postures, mindfulness, and breathwork.
+                Khagendra's
+                schedule includes morning and evening sessions throughout the week, catering to both early risers and
+                those seeking
+                relaxation after a busy day. Whether you are a beginner or an experienced yogi, Khagendra's classes are
+                designed to
+                accommodate all levels. To book a session with Khagendra Oli, please check our class schedule for his
+                availability
+                and use our online booking system to secure your spot on the mat.
+                Immerse yourself in the transformative journey of yoga with Khagendra's guidance.</p>
+            <img src="./Image/ko.jpg" alt="Instructor 2">
+        </div>
+
+        <div class="instructor">
+            <h2>Sujan Maharjan</h2>
+            <p>Zumba expert with high-energy dance routines.Introducing Sujan Maharjan who is our vibrant and energetic
+                Zumba instructor at Fitness Zilla.
+                Sujan brings a enthusiasm to every class combining high-energy dance routines with a passion for
+                fitness. With a background in dance and fitness instruction,
+                Sujan creates an hot atmosphere that makes Zumba an exciting workout experience for all participants.
+                Sujan's schedule features dynamic Zumba sessions throughout the week,
+                offering a fantastic opportunity for fitness enthusiasts to burn calories in a fun-filled environment.
+                Sujan's classes are designed to cater to all skill levels. To secure your spot in one of Sujan
+                Maharjan's lively Zumba classes,
+                please refer to our class schedule and make use of our convenient online booking system. Join Sujan on
+                the dance floor and let the beats inspire your fitness journey.</p>
+            <img src="./Image/sujan.jpg" alt="Instructor 3">
+        </div>
+
+        <h1>Private Trainer</h1>
+
+        <div class="instructor">
+            <h2>Sabin Bist</h2>
+            <p> This guy is a Motherfucking thing, if found please contact us immediately to fuck him at same duration.
+                I suggest not
+                to make him as your personal trainer as he might keep you unaware about the body health rather he
+                encourages you to
+                spend an unusual time with you. </p>
+            <img src="./Image/sabin.jpg" alt="Trainer 1">
+        </div>
+
+        <div class="instructor">
+            <h2>Abinish Jaiswal</h2>
+            <p>Zumba expert with high-energy dance routines.Abinish is an exceptional Zumba expert trainer known for
+                infusing energy
+                and passion into fitness. His dynamic classes are lively dance parties, blending Latin and international
+                moves with pulsating beats.
+                Abinish's expertise lies in creating a welcoming atmosphere for all fitness levels. Beyond
+                choreography,he connects with participants
+                on a personal level, motivating them to surpass their limits. Abinish stays current with fitness trends,
+                ensuring his classes remain fresh and invigorating.
+                He fosters a sense of community through social events and workshops, turning workouts into celebrations
+                of movement and self-expression.
+                Abinish is not just a trainer; he's a motivational force that inspires a commitment to a healthier
+                lifestyle.
+            </p>
+            <img src="./Image/Screenshot (667).png" alt="Trainer 2">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fitness Zilla.</p>
+    </footer>
+</body>
+
+</html>
